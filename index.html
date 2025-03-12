@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecss/styles.css">
+    <title>گیفت لند</title>
+</head>
+<body>
+    <header>
+        <h1>فروشگاه گیفت لند</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">محصولات</a></li>
+                <li><a href="ticket.html">ارسال تیکت</a></li>
+                <li><a href="how-to-buy.html">طریقه خرید</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="giftCardForm" onsubmit="sendOrder(event)">
+        <h2>محصولات ما</h2>
+        <form id="giftCardForm">
+            <label for="giftCardSelect">گیفت کارت مورد نظر را انتخاب کنید</label>
+            <select id="giftCardSelect" name="giftCard">
+                <option value="گیفت کارت جم فری فایر – الماس">گیفت کارت جم فری فایر – الماس</option>
+                <option value="ردیم کد یوسی پابجی">ردیم کد یوسی پابجی</option>
+                <option value="ردیم کد پابجی نیو استیت">ردیم کد پابجی نیو استیت</option>
+                <option value="گیفت کارت ریزر گلد گلوبال">گیفت کارت ریزر گلد گلوبال</option>
+                <option value="گیفت کارت ریزر گلد ترکیه">گیفت کارت ریزر گلد ترکیه</option>
+                <option value="گیفت کارت ریزر گلد آمریکا">گیفت کارت ریزر گلد آمریکا</option>
+                <option value="گیفت کارت استیم آمریکا">گیفت کارت استیم آمریکا</option>
+                <option value="گیفت کارت ایکس باکس آمریکا">گیفت کارت ایکس باکس آمریکا</option>
+            </select>
+
+            <label for="name-member">نام و نام خوانوادگی</label>
+            <input type="name" id="name-member" name="name-member" placeholder="نام و نام خوانوادگی خود را وارد کنید" required>
+
+            <label for="phone">شماره تماس</label>
+            <input type="tel" id="phone" name="phone" placeholder="شماره تماس خود را وارد کنید" required>
+
+            <label for="accountId">آیدی اکانت</label>
+            <input type="text" id="accountId" name="accountId" placeholder="آیدی اکانت خود را وارد کنید" required>
+
+            <label for="gameName">نام بازی(در صورت وجود بازی دیگر یا اکنت های دیگر وارد کنید)</label>
+            <input type="text" id="gameName" name="gameName" placeholder="نام بازی خود را وارد کنید" required>
+
+            <button type="submit">خرید</button>
+        </form>
+    </section>
+
+    <section id="team">
+        <h2>معرفی تیم ما</h2>
+        <div class="team-member">
+            <h3>علی رضایی</h3>
+            <p>مدیر عامل و بنیان‌گذار. با بیش از 10 سال تجربه در صنعت بازی و تجارت الکترونیک.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>کپی رایت © 2025 فروشگاه گیفت لند</p>
+    </footer>
+    <script src="scriptJS/script.js"></script>
+</body>
+</html>
